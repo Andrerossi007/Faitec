@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom</title>
+  <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+
+<body class="login-bg">
+<div class="container">
+  <div class="auth-wrapper">
+    <!-- Form starts -->
+    <form th:action="@{/login}" method="post">
+      <div class="auth-box">
+        <a href="https://www.custom.biz/pt_PT/paginainicial" class="auth-logo mb-4">
+          <img th:src="@{/img/Logo.png}" alt="Bootstrap Gallery">
+        </a>
+
+        <h4 class="mb-4">Login</h4>
+
+        <div class="mb-3">
+          <label class="form-label" for="login">Your email <span class="text-danger">*</span></label>
+          <input type="text" id="login" name="login" class="form-control" placeholder="Enter your login">
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label" for="senha">Your password <span class="text-danger">*</span></label>
+          <input type="password" id="senha" name="senha" class="form-control" placeholder="Enter password">
+        </div>
+
+        <div class="d-flex justify-content-end mb-3">
+          <a href="../Redefinir Senha/Bootstrap Gallery - Medical Admin Templates & Dashboards.html" class="text-decoration-underline">Forgot password?</a>
+        </div>
+
+        <div class="mb-3 d-grid gap-2">
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
